@@ -10,12 +10,13 @@ namespace Pidev.cons
 {
     class Program
     {
-        
-        static void Main(string[] args)
+
+        static  void Main(string[] args)
         {
 
-            ExpenseFormService es = new ExpenseFormService();
-           es.AddEform();
+            ProjService es = new ProjService();
+            es.Aff_antecedantM(1);
+             
         }
     }
 }

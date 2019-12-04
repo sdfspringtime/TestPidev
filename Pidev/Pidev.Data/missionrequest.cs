@@ -41,5 +41,8 @@ namespace Pidev.Data
         public virtual manager manager { get; set; }
 
         public virtual mission1 mission1 { get; set; }
+        [ForeignKey("wq")]
+        public int? wqId { get; set; }
+        public virtual waitingQueue wq { get; set; }
     }
 }

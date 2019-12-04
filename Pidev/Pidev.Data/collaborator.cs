@@ -47,6 +47,10 @@ namespace Pidev.Data
         [StringLength(255)]
         public string team { get; set; }
 
+        
+        public int notea { get; set; }
+
+
         public int? manager_id { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

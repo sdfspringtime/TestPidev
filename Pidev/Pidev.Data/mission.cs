@@ -24,5 +24,8 @@ namespace Pidev.Data
 
         [Column(TypeName = "bit")]
         public bool state { get; set; }
+        
+
+
     }
 }

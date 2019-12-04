@@ -8,8 +8,8 @@ namespace Pidev.Data.EntityWS
 {
    public  class Tr
     {
-        public int id { get; set; }
-        public int fg { get; set; }
+        public  Boolean state { get; set; }
+        public string date { get; set; }
         public string justification { get; set; }
            public string amount { get; set; }
 

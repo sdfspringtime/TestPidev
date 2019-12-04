@@ -30,6 +30,7 @@ namespace Pidev.Data
 
         [Column(TypeName = "bit")]
         public bool state { get; set; }
+        public int maxcollab { get; set; }
 
         public int? ffee_id { get; set; }
 

@@ -21,7 +21,7 @@ namespace Pidev.Data
         public virtual DbSet<mission1> mission1 { get; set; }
         public virtual DbSet<missionrequest> missionrequests { get; set; }
         public virtual DbSet<test> tests { get; set; }
-
+        public virtual DbSet<waitingQueue> waitingQueues { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<collaborator>()
@@ -199,6 +199,8 @@ namespace Pidev.Data
             modelBuilder.Entity<missionrequest>()
                 .Property(e => e.lastname)
                 .IsUnicode(false);
+
+          
         }
     }
 }

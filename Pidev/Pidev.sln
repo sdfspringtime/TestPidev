@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pidev.Service", "Pidev.Serv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pidev.cons", "Pidev.cons\Pidev.cons.csproj", "{766F68D9-DCFA-4FB7-AB56-1EC92BFB7B7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCPidev", "MVCPidev\MVCPidev.csproj", "{2DD62EC1-39DE-404A-B217-87DB8169076B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{766F68D9-DCFA-4FB7-AB56-1EC92BFB7B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{766F68D9-DCFA-4FB7-AB56-1EC92BFB7B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{766F68D9-DCFA-4FB7-AB56-1EC92BFB7B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DD62EC1-39DE-404A-B217-87DB8169076B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD62EC1-39DE-404A-B217-87DB8169076B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD62EC1-39DE-404A-B217-87DB8169076B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD62EC1-39DE-404A-B217-87DB8169076B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

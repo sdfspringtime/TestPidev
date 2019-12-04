@@ -92,11 +92,29 @@
     <Compile Include="expform.cs" />
     <Compile Include="fixedfee.cs" />
     <Compile Include="manager.cs" />
+    <Compile Include="Migrations\201912031604340_a1.cs" />
+    <Compile Include="Migrations\201912031604340_a1.Designer.cs">
+      <DependentUpon>201912031604340_a1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912031613580_a2.cs" />
+    <Compile Include="Migrations\201912031613580_a2.Designer.cs">
+      <DependentUpon>201912031613580_a2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912032159059_a3.cs" />
+    <Compile Include="Migrations\201912032159059_a3.Designer.cs">
+      <DependentUpon>201912032159059_a3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912032228468_a4.cs" />
+    <Compile Include="Migrations\201912032228468_a4.Designer.cs">
+      <DependentUpon>201912032228468_a4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="mission.cs" />
     <Compile Include="mission1.cs" />
     <Compile Include="missionrequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="test.cs" />
+    <Compile Include="waitingQueue.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Pidev.Domain\Pidev.Domain.csproj">
@@ -107,6 +125,20 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201912031604340_a1.resx">
+      <DependentUpon>201912031604340_a1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912031613580_a2.resx">
+      <DependentUpon>201912031613580_a2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912032159059_a3.resx">
+      <DependentUpon>201912032159059_a3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912032228468_a4.resx">
+      <DependentUpon>201912032228468_a4.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -27,11 +27,26 @@ namespace Pidev.Service
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri("http://localhost:9080/Pidev-web/");
 
-        var r =client.PostAsJsonAsync<Tr>("api/ExpCreate", c).ContinueWith((postTask)=> postTask.Result.EnsureSuccessStatusCode()).Result;
+        var r =client.PostAsJsonAsync<Tr>("api/ExpCreate/add", c).ContinueWith((postTask)=> postTask.Result.EnsureSuccessStatusCode()).Result;
            
 
 
             
 
         }
+         static async Task<Tr>  GetEform()
+        {
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri("http://localhost:9080/Pidev-web/");
+            client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+            HttpResponseMessage response = client.GetAsync("api/ExpCreate/getEform").Result;
+            Tr product = null;
+            if (response.IsSuccessStatusCode)
+            {
+                product = await response.Content.ReadAsAsync<Tr>();
+            }
+            return product;
+        }
+        public async void aff()
+        { await GetEform(); }
     } }
