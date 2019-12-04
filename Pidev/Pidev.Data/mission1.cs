@@ -18,6 +18,7 @@ namespace Pidev.Data
         }
 
         public int id { get; set; }
+        
 
         [StringLength(255)]
         public string emplacement { get; set; }
@@ -28,8 +29,14 @@ namespace Pidev.Data
         [StringLength(255)]
         public string startDate { get; set; }
 
+      
+
+
         [Column(TypeName = "bit")]
         public bool state { get; set; }
+        public virtual ICollection<collaborator> collablist { get; set; }
+        public virtual ICollection<waitingQueue> wq { get; set; }
+
         public int maxcollab { get; set; }
 
         public int? ffee_id { get; set; }

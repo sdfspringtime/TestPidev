@@ -11,8 +11,8 @@ namespace Pidev.Data
     {
         public int id { get; set; }
         public bool isConfirmed { get; set; }
-        [ForeignKey("miss")]
-        public int? idmission { get; set; }
+
+
         public virtual mission1 miss { get; set; }
 
         public virtual ICollection<missionrequest> mreq { get; set; }

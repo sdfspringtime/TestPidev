@@ -82,6 +82,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExpenseFormService.cs" />
+    <Compile Include="IMissionRequestService.cs" />
+    <Compile Include="MissionRequestService.cs" />
     <Compile Include="ProjService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -93,6 +95,10 @@
     <ProjectReference Include="..\Pidev.Domain\Pidev.Domain.csproj">
       <Project>{05207523-6961-4b60-a1ea-6ab89a1e6fed}</Project>
       <Name>Pidev.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Service.Pattern\Service.Pattern.csproj">
+      <Project>{c7bba310-fea6-44d5-a272-5ac9e5454a1c}</Project>
+      <Name>Service.Pattern</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -50,7 +50,7 @@ namespace Pidev.Data
         
         public int notea { get; set; }
 
-
+        public virtual ICollection<mission1> misslist { get; set; }
         public int? manager_id { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -11,7 +11,10 @@ namespace Pidev.Data
             : base("name=Context")
         {
         }
-
+        static Context()
+        {
+            Database.SetInitializer<Context>(null);
+        }
         public virtual DbSet<collaborator> collaborators { get; set; }
         public virtual DbSet<expenseform> expenseforms { get; set; }
         public virtual DbSet<expform> expforms { get; set; }
@@ -24,6 +27,8 @@ namespace Pidev.Data
         public virtual DbSet<waitingQueue> waitingQueues { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            //Database.SetInitializer<Context>(null);
+
             modelBuilder.Entity<collaborator>()
                 .Property(e => e.address)
                 .IsUnicode(false);
